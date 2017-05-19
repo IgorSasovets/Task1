@@ -39,14 +39,18 @@
 комбінацію '?:'. Наприклад, (?:\d+) відповідає одному чи більше числовому символу але без їх запам'ятовування.
 
 Робота з регулярними виразами
-Regular expressions are used with the RegExp methods test and exec and with the String methods match, replace, 
-search, and split. These methods are explained in detail in the JavaScript reference.
+Регулярні вирази використовуються спільно з такими методами класу RegExp як test і exec, а також
+з наступними методами класу String: match, replace, search, split. Ці методи детально поясненні у
+довідці по JavaScript.
 
-Methods that use regular expressions
-Method	Description
-exec	A RegExp method that executes a search for a match in a string. It returns an array of information.
-test	A RegExp method that tests for a match in a string. It returns true or false.
-match	A String method that executes a search for a match in a string. It returns an array of information or null on a mismatch.
-search	A String method that tests for a match in a string. It returns the index of the match, or -1 if the search fails.
-replace	A String method that executes a search for a match in a string, and replaces the matched substring with a replacement substring.
-split	A String method that uses a regular expression or a fixed string to break a string into an array of substrings.
+Методи, які використовують регулярні вирази
+Метод	Опис
+exec    Метод класу RegExp, який виконує пошук відповідностей у рядку символів. Цей метод повертає масив символів.
+test    Метод класу RegExp, який виконує тестовий пошук відповідностей у рядку символів. Він повертає булеве значення true або false.
+match   Метод класу String, який виконує пошук відповідностей у рядку символів. Цей метод повертає масив символів або null, якщо не 
+        знайдено відповідностей. 
+search  Метод класу String, який виконує тестовий пошук відповідностей у рядку символів. Цей метод повертає індекс співпадіння або -1
+        якщо відповідностей не знайдено.
+replace Метод класу String, який виконує пошук відповідностей у рядку і замінює їх на вказаний в аргументах методу вираз.
+split   Метод класу String, який використовує регулярний вираз або вказаний користувачем для того щоб розділити рядок
+        символів на масив рядків, використовуючи цей вираз.
